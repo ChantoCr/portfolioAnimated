@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 
+import { Reveal } from "@/components/motion/Reveal";
 import { cn } from "@/lib/utils";
 
 type SectionShellProps = {
@@ -22,7 +23,7 @@ export function SectionShell({
   return (
     <section id={id} className={cn("scroll-mt-24 py-20 sm:py-24", className)}>
       <div className="space-y-10">
-        <div className="max-w-3xl space-y-4">
+        <Reveal className="max-w-3xl space-y-4">
           {eyebrow ? (
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-accentSecondary">
               {eyebrow}
@@ -34,7 +35,7 @@ export function SectionShell({
             </h2>
             <p className="text-base leading-7 text-muted sm:text-lg">{description}</p>
           </div>
-        </div>
+        </Reveal>
         {children}
       </div>
     </section>

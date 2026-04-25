@@ -8,7 +8,7 @@ export function Navbar() {
     <header className="sticky top-0 z-50 border-b border-white/[0.06] bg-[rgba(9,9,11,0.7)] backdrop-blur-xl">
       <div className="container">
         <div className="flex min-h-16 items-center justify-between gap-6 py-3">
-          <Link href="#hero" className="group min-w-0">
+          <Link href="/" className="group min-w-0">
             <span className="font-display text-sm font-semibold uppercase tracking-[0.2em] text-foreground transition-colors group-hover:text-accent">
               {SITE_NAME}
             </span>
@@ -32,10 +32,10 @@ export function Navbar() {
           </nav>
 
           <Link
-            href="#contact"
+            href="/#contact"
             className="rounded-full border border-white/[0.12] bg-white/[0.03] px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-white/[0.08]"
           >
-            Start here
+            Contact
           </Link>
         </div>
 

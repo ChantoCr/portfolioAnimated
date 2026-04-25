@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     template: `%s | ${SITE_NAME}`,
   },
   description:
-    "A cinematic, AI-powered developer portfolio operating system built to showcase projects, architecture thinking, UI/UX process, and software engineering growth.",
+    "A cinematic developer portfolio built to showcase projects, architecture thinking, UI/UX process, and software engineering growth."
 };
 
 export default function RootLayout({

@@ -15,7 +15,7 @@ export function Footer() {
               Built as a portfolio operating system, not a template site.
             </p>
             <p className="text-sm leading-6 text-muted">
-              This foundation prioritizes clean architecture, structured content, premium UI direction, and a future-ready path for AI interaction.
+              This foundation prioritizes clean architecture, structured content, premium UI direction, and thoughtful interaction design.
             </p>
           </div>
 
@@ -33,7 +33,7 @@ export function Footer() {
               ))}
             </div>
             <p className="text-xs uppercase tracking-[0.14em] text-muted">
-              Foundation phase · Next.js · TypeScript · Tailwind CSS
+              Motion foundation · Next.js · TypeScript · Tailwind CSS
             </p>
           </div>
         </div>

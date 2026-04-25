@@ -1,35 +1,29 @@
-export const SITE_NAME = "AI-Powered Developer Portfolio OS";
+export const SITE_NAME = "Gabriel Soto Portfolio";
 
 export const NAV_ITEMS = [
-  { label: "Home", href: "#hero" },
-  { label: "Agent", href: "#agent" },
-  { label: "Projects", href: "#projects" },
-  { label: "Skills", href: "#skills" },
-  { label: "Architecture", href: "#architecture" },
-  { label: "Contact", href: "#contact" },
+  { label: "Home", href: "/#hero" },
+  { label: "Console", href: "/#console" },
+  { label: "Projects", href: "/projects" },
+  { label: "Skills", href: "/#skills" },
+  { label: "Timeline", href: "/#timeline" },
+  { label: "Architecture", href: "/#architecture" },
+  { label: "Contact", href: "/#contact" },
 ] as const;
 
-export const HERO_HIGHLIGHTS = [
-  "Production-minded portfolio system",
-  "AI-ready content architecture",
-  "Cinematic UI foundation",
-  "Scalable case-study structure",
-] as const;
-
-export const AGENT_MODES = [
-  "Recruiter Mode",
-  "Developer Mode",
-  "Client Mode",
-  "Project Explainer Mode",
-  "Architecture Reviewer Mode",
+export const CONSOLE_MODES = [
+  "Recruiter View",
+  "Developer View",
+  "Client View",
+  "Project Explorer",
+  "Architecture Review",
 ] as const;
 
 export const KNOWLEDGE_SOURCES = [
-  "Project data",
+  "Project content",
   "Case studies",
-  "CV content",
+  "Professional profile",
   "Architecture notes",
-  "Approved professional summary",
+  "Approved experience details",
 ] as const;
 
 export const ARCHITECTURE_PILLARS = [
@@ -41,7 +35,7 @@ export const ARCHITECTURE_PILLARS = [
   {
     title: "Content outside components",
     description:
-      "Projects, skills, timeline data, and profile content live in dedicated content modules so the UI stays reusable and AI-ready.",
+      "Projects, skills, timeline data, and profile content live in dedicated content modules so the UI stays reusable and future experiences stay consistent.",
   },
   {
     title: "Typed building blocks",

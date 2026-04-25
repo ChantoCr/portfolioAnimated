@@ -11,21 +11,21 @@ export const buildTimeline: BuildPhase[] = [
     phase: "Phase 1",
     title: "Foundation and design system",
     summary:
-      "Project setup, layout system, homepage structure, navigation, and AI-ready content organization.",
+      "Project setup, layout system, homepage structure, navigation, and structured content organization.",
   },
   {
     id: "phase-2",
     phase: "Phase 2",
     title: "Case studies and technical depth",
     summary:
-      "Project storytelling, Skill Intelligence Map, UI/UX showcase, and Architecture Lab experiences.",
+      "Project storytelling, skill mapping, UI/UX showcase, and Architecture Lab experiences.",
   },
   {
     id: "phase-3",
     phase: "Phase 3",
-    title: "AI console and knowledge retrieval",
+    title: "Interactive console and knowledge retrieval",
     summary:
-      "OpenAI integration, portfolio knowledge grounding, and audience-specific AI interaction modes.",
+      "Knowledge-grounded console flows, documented content retrieval, and audience-specific interaction modes.",
   },
   {
     id: "phase-4",

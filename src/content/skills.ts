@@ -26,11 +26,11 @@ export const skills: Skill[] = [
     areas: ["Visual hierarchy", "Typography", "Accessibility", "Interaction design"],
   },
   {
-    id: "ai-assisted-workflow",
-    title: "AI-Assisted Workflow",
+    id: "structured-workflow-systems",
+    title: "Structured Workflow Systems",
     summary:
-      "Uses structured prompts, Skills, and portfolio knowledge boundaries to support trustworthy development and communication.",
+      "Uses clear planning, knowledge boundaries, and reusable process patterns to support trustworthy development and communication.",
     emphasis: "Growing",
-    areas: ["Prompt architecture", "Knowledge boundaries", "Agent design", "Workflow acceleration"],
+    areas: ["Prompt architecture", "Knowledge boundaries", "Process design", "Workflow acceleration"],
   },
 ];
