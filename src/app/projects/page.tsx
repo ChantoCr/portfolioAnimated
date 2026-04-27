@@ -30,8 +30,9 @@ export default function ProjectsPage() {
                   Case studies built to explain decisions, not just show screenshots
                 </h1>
                 <p className="max-w-4xl text-lg leading-8 text-muted sm:text-xl">
-                  This library turns portfolio work into structured project stories with problem framing,
-                  solution thinking, technical decisions, UI/UX rationale, and future improvements.
+                  This library now combines portfolio work with public GitHub and GitLab repositories,
+                  turning them into structured case studies with problem framing, solution thinking,
+                  technical decisions, UI/UX rationale, and future improvements.
                 </p>
               </div>
             </Reveal>
@@ -41,8 +42,9 @@ export default function ProjectsPage() {
                 Current focus
               </p>
               <p className="text-sm leading-7 text-muted">
-                Only approved portfolio projects are shown here. Additional freelance work can be added
-                later once publication details are confirmed.
+                Public repository-backed projects are now included. Some case studies are intentionally
+                limited to what can be verified from the public codebase until richer approved project
+                context is provided.
               </p>
               <div className="flex flex-col gap-3 sm:flex-row">
                 <Link href="/" className={buttonVariants({ variant: "secondary", size: "lg" })}>

@@ -34,6 +34,12 @@ export function CaseStudyHero({ project }: CaseStudyHeroProps) {
                 {project.category}
               </Badge>
               <Badge className="text-accent">{project.status}</Badge>
+              <Badge className="border-white/[0.08] bg-black/20 text-foreground">
+                {project.engagementType}
+              </Badge>
+              <Badge className="border-white/[0.08] bg-black/20 text-foreground">
+                {project.publicationMode}
+              </Badge>
               <Badge className="border-white/[0.08] bg-black/20 text-foreground">{project.period}</Badge>
             </div>
 
@@ -71,10 +77,29 @@ export function CaseStudyHero({ project }: CaseStudyHeroProps) {
 
             <div className="space-y-3">
               <p className="text-xs font-semibold uppercase tracking-[0.18em] text-accentSecondary">
+                Project context
+              </p>
+              <p className="text-sm leading-7 text-muted">{project.domain}</p>
+            </div>
+
+            <div className="space-y-3">
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-accentSecondary">
                 Role
               </p>
               <p className="text-sm leading-7 text-muted">{project.role}</p>
             </div>
+
+            {project.media.length > 0 ? (
+              <div className="space-y-3">
+                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-accentSecondary">
+                  Supporting media
+                </p>
+                <p className="text-sm leading-7 text-muted">
+                  {project.media.length} prepared media item{project.media.length === 1 ? "" : "s"} for
+                  future richer case study presentation.
+                </p>
+              </div>
+            ) : null}
 
             <StaggerGroup className="flex flex-wrap gap-2" delayChildren={0.12} staggerChildren={0.05}>
               {project.tags.map((tag) => (

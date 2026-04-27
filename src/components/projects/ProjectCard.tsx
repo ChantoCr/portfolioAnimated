@@ -30,17 +30,36 @@ export function ProjectCard({ project, featuredLayout = false }: ProjectCardProp
 
         <p className="max-w-3xl text-sm leading-7 text-muted">{project.summary}</p>
 
+        <div className="space-y-3 rounded-2xl border border-white/[0.08] bg-white/[0.03] p-4">
+          <p className="text-xs font-semibold uppercase tracking-[0.16em] text-accentSecondary">
+            Project context
+          </p>
+          <div className="flex flex-wrap gap-2">
+            <Badge className="border-white/[0.08] bg-black/20 text-foreground">
+              {project.engagementType}
+            </Badge>
+            <Badge className="border-white/[0.08] bg-black/20 text-foreground">
+              {project.publicationMode}
+            </Badge>
+          </div>
+          <p className="text-sm leading-7 text-muted">{project.domain}</p>
+        </div>
+
         <div className={featuredLayout ? "grid gap-5 md:grid-cols-[1.05fr_0.95fr]" : "space-y-5"}>
           <div className="space-y-3 rounded-2xl border border-white/[0.08] bg-white/[0.03] p-4">
             <p className="text-xs font-semibold uppercase tracking-[0.16em] text-accentSecondary">
               Stack and tooling
             </p>
             <div className="flex flex-wrap gap-2">
-              {project.technologies.map((technology) => (
-                <Badge key={technology} className="border-white/[0.08] bg-black/20 text-foreground">
-                  {technology}
-                </Badge>
-              ))}
+              {project.technologies.length > 0 ? (
+                project.technologies.map((technology) => (
+                  <Badge key={technology} className="border-white/[0.08] bg-black/20 text-foreground">
+                    {technology}
+                  </Badge>
+                ))
+              ) : (
+                <p className="text-sm leading-7 text-muted">No public stack details documented yet.</p>
+              )}
             </div>
           </div>
 

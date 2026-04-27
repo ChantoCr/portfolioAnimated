@@ -1,10 +1,24 @@
 export type ProjectStatus = "In Progress" | "Built" | "Planned";
 
+export type ProjectPublicationMode = "Public" | "Anonymized";
+
+export type ProjectEngagementType = "Portfolio" | "Freelance" | "Client" | "Internal";
+
+export type ProjectMediaKind = "Image" | "Video" | "Mockup";
+
 export type ProjectLink = {
   label: string;
   href: string;
   external?: boolean;
   enabled?: boolean;
+};
+
+export type ProjectMedia = {
+  kind: ProjectMediaKind;
+  title: string;
+  description: string;
+  src?: string;
+  alt?: string;
 };
 
 export type Project = {
@@ -16,6 +30,9 @@ export type Project = {
   recruiterSummary: string;
   category: string;
   status: ProjectStatus;
+  engagementType: ProjectEngagementType;
+  publicationMode: ProjectPublicationMode;
+  domain: string;
   role: string;
   period: string;
   featured: boolean;
@@ -28,5 +45,6 @@ export type Project = {
   uiuxDecisions: string[];
   results: string[];
   futureImprovements: string[];
+  media: ProjectMedia[];
   links: ProjectLink[];
 };

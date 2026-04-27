@@ -26,6 +26,18 @@ export function ProjectFactSidebar({ project }: ProjectFactSidebarProps) {
               <p className="mt-1 text-sm font-medium text-foreground">{project.status}</p>
             </div>
             <div>
+              <p className="text-xs uppercase tracking-[0.14em] text-muted">Engagement</p>
+              <p className="mt-1 text-sm font-medium text-foreground">{project.engagementType}</p>
+            </div>
+            <div>
+              <p className="text-xs uppercase tracking-[0.14em] text-muted">Publication</p>
+              <p className="mt-1 text-sm font-medium text-foreground">{project.publicationMode}</p>
+            </div>
+            <div>
+              <p className="text-xs uppercase tracking-[0.14em] text-muted">Domain</p>
+              <p className="mt-1 text-sm leading-7 text-foreground">{project.domain}</p>
+            </div>
+            <div>
               <p className="text-xs uppercase tracking-[0.14em] text-muted">Role</p>
               <p className="mt-1 text-sm leading-7 text-foreground">{project.role}</p>
             </div>
@@ -42,11 +54,15 @@ export function ProjectFactSidebar({ project }: ProjectFactSidebarProps) {
           Technologies
         </p>
         <div className="flex flex-wrap gap-2">
-          {project.technologies.map((technology) => (
-            <Badge key={technology} className="border-white/[0.08] bg-black/20 text-foreground">
-              {technology}
-            </Badge>
-          ))}
+          {project.technologies.length > 0 ? (
+            project.technologies.map((technology) => (
+              <Badge key={technology} className="border-white/[0.08] bg-black/20 text-foreground">
+                {technology}
+              </Badge>
+            ))
+          ) : (
+            <p className="text-sm leading-7 text-muted">No public stack details documented yet.</p>
+          )}
         </div>
       </SurfaceCard>
 

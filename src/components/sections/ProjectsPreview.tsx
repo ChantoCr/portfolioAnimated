@@ -12,8 +12,8 @@ export function ProjectsPreview() {
     <SectionShell
       id="projects"
       eyebrow="Proof of work"
-      title="Structured project storytelling with room to grow into full case studies"
-      description="The portfolio now has a dedicated case-study system and project routes, making it easier to turn selected work into deeper technical, visual, and recruiter-facing stories."
+      title="Public repository-backed projects turned into structured case studies"
+      description="The portfolio now combines reusable project routes with real GitHub and GitLab work, making it easier to review technical reasoning, product scope, and implementation quality instead of only seeing repository names."
     >
       <div className="space-y-8">
         <StaggerGroup className="grid gap-6 lg:grid-cols-2" delayChildren={0.12}>
@@ -29,8 +29,8 @@ export function ProjectsPreview() {
             <Link href="/projects" className={buttonVariants({ variant: "primary", size: "lg" })}>
               Explore all case studies
             </Link>
-            <Link href="/projects/developer-portfolio-os" className={buttonVariants({ variant: "secondary", size: "lg" })}>
-              Review flagship project
+            <Link href="/projects/loldraftengine" className={buttonVariants({ variant: "secondary", size: "lg" })}>
+              Review LoLDraftEngine
             </Link>
           </div>
         </Reveal>
